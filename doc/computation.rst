@@ -238,7 +238,7 @@ Thresholds
 Calculation using ``icclim`` for ECA Indices
 ============================================
 
-The Python library ``icclim`` (http://icclim.readthedocs.org/en/latest) may be used to calculate the full suite of European Climate Assessment (ECA) indices. To select an ``icclim`` calculation, prefix the name of the indice with the prefix ``'icclim_'``. A list of indices computable with ``icclim`` is available here: http://icclim.readthedocs.org/en/latest/python_api.html#icclim-indice-compute-indice.
+The Python library ``icclim`` (http://icclim.readthedocs.io/en/latest) may be used to calculate the full suite of European Climate Assessment (ECA) indices. To select an ``icclim`` calculation, prefix the name of the indice with the prefix ``'icclim_'``. A list of indices computable with ``icclim`` is available here: http://icclim.readthedocs.io/en/latest/python_api.html#icclim-indice-compute-indice.
 
 NESII hosts an Anaconda ``icclim`` build:
 
@@ -252,8 +252,8 @@ For example, to calculate the *TG* indice (mean of daily mean temperature), sele
 
 Any optional calculation parameters may be passed in using the ``'kwds'`` key:
 
->>> calc = [{..., 'kwds': {'percentile_dict': dict}}]
+>>> calc = [{..., 'kwds': {'percentile_dict': <Percentile Dictionary>}}]
 
-Custom user indices are not implemented in OCGIS. OCGIS may be used to pre-process an ICCLIM input file prior to a custom calculation. Please contact user support if your application could benefit from custom ICCLIM user indices in OCGIS.
+Custom user indices are not implemented in OpenClimateGIS. OpenClimateGIS may be used to pre-process an ICCLIM input file prior to a custom calculation. Please contact user support if your application could benefit from custom ICCLIM user indices in OpenClimateGIS.
 
 .. _NumPy masked array functions: http://docs.scipy.org/doc/numpy/reference/maskedarray.html

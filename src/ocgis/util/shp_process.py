@@ -1,7 +1,7 @@
+import argparse
 import os
 from collections import OrderedDict
 from warnings import warn
-import argparse
 
 import fiona
 from shapely.geometry.geo import shape, mapping
@@ -89,7 +89,7 @@ def main(cargs):
     sp = ShpProcess(cargs.in_shp, cargs.folder)
     if cargs.folder is None:
         cargs.folder = os.getcwd()
-    print(sp.process())
+    print((sp.process()))
 
 
 if __name__ == '__main__':
